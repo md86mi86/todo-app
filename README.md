@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# 📝 Simple To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive, and intuitive To-Do application built with React, TypeScript, Tailwind CSS, and DaisyUI. This app helps you keep track of your tasks with a beautiful and user-friendly interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Tasks**: Quickly add new tasks to your list.
+- **Delete Individual Tasks**: Remove tasks you've completed or no longer need.
+- **Delete All Tasks**: Clear your entire to-do list with a single click.
+- **Toggle Completion**: Mark tasks as complete or incomplete.
+- **Persistence**: Your tasks are saved locally in your browser's storage, so they're still there when you return!
+- **Responsive Design**: Enjoy a seamless experience across various devices.
+- **Modern UI**: Powered by Tailwind CSS and DaisyUI for a clean and attractive look.
 
-## Expanding the ESLint configuration
+## 🚀 Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A strongly typed superset of JavaScript that enhances code quality and maintainability.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **DaisyUI**: A Tailwind CSS component library that provides pre-built UI components.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Installation & Setup
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To get a copy of this project up and running on your local machine, follow these simple steps:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository:**
+    ```bash
+git clone https://github.com/md86mi86/todo-app.git
+    ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2.  **Navigate to the project directory:**
+    ```bash
+cd your-todo-app
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+npm install
+# or
+yarn install
+    ```
+
+4.  **Start the development server:**
+    ```bash
+npm start
+# or
+yarn start
+    ```
+
+    This will open the application in your browser at `http://localhost:3000`.
+
+## 🤝 Contributing
+
+Contributions are always welcome! If you have any suggestions, feature requests, or bug reports, please feel free to open an issue or submit a pull request.
+
+## 📧 Contact
+
+If you have any questions or just want to connect, feel free to reach out!
+
+-   **GitHub**: [md86mi86](https://github.com/md86mi86)
+-   **Email**: mohammad2007maleki@gmail.com
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
